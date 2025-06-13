@@ -1,0 +1,356 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K N Digital Cafe</title>
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f53d;
+        }
+        
+        /* Header styles */
+        header {
+            background-color: #167a61;
+            color: white;
+            padding: 1.5rem 0;
+            text-align: center;
+        }
+        
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        
+        .tagline {
+            font-size: 1rem;
+            opacity: 0.8;
+        }
+        
+        /* Main content styles */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        
+        section {
+            padding: 2rem 0;
+            border-bottom: 1px solid #06e7b7;
+        }
+        
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        
+        /* Services section */
+        .services-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+        
+        @media (min-width: 768px) {
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        .service-card {
+            background: rgba(255, 255, 255, 0.253);
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .service-card h3 {
+            color: #3498db;
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Contact section */
+        .contact-info {
+            margin-bottom: 2rem;
+        }
+        
+        .contact-info p {
+            margin-bottom: 0.5rem;
+        }
+        
+        .contact-form {
+            background: rgb(187, 187, 187);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .form-group {
+            margin-bottom: 1rem;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+        
+        input, textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #dddddd21;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+        
+        textarea {
+            min-height: 120px;
+        }
+        
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        button:hover {
+            background-color: #2980b9;
+        }
+        
+        /* Footer styles */
+        footer {
+            background-color: #01080f;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 2rem;
+        }
+        
+        .social-links {
+            margin-top: 1rem;
+        }
+        
+        .social-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 0.5rem;
+            font-size: 1.2rem;
+        }
+        
+        /* Cookie consent banner */
+        .cookie-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: #2c3e50;
+            color: white;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            z-index: 1000;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+        
+        .cookie-banner.show {
+            transform: translateY(0);
+        }
+        
+        .cookie-banner p {
+            margin-bottom: 1rem;
+            max-width: 800px;
+        }
+        
+        .cookie-banner button {
+            margin: 0 0.5rem;
+        }
+        
+        .cookie-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 480px) {
+            .logo {
+                font-size: 1.5rem;
+            }
+            
+            section {
+                padding: 1.5rem 0;
+            }
+            
+            .service-card {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">K N Digital Cafe</div>
+            <div class="tagline">Fast internet and Printing Services</div>
+        </div>
+    </header>
+    
+    <main class="container">
+        <section id="services">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>High-Speed Internet</h3>
+                    <p>Super-fast fiber optic connections for browsing, sending online applications, and more.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Online Applications</h3>
+                    <p> Fast and reliable applications for job seekers and students.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Printing & Scanning</h3>
+                    <p>High-quality color and black & white printing services.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Ink Refills</h3>
+                    <p>High-quality ink refills for all major printer brands.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <p><strong>Address:</strong> Howick, South Africa</p>
+              
+                <p><strong>Email:</strong> admin@kndigitals.co.za</p>
+                <p><strong>Hours:</strong> Mon-Sat 8:00 AM - 6:00 PM</p>
+            </div>
+            
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="year"></span> K N Digital Cafe. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://facebook.com/KNDigitalCafe" target="_blank" aria-label="Facebook">Facebook</a>
+            </div>
+        </div>
+    </footer>
+    
+    <div class="cookie-banner" id="cookieBanner">
+        <p>We use cookies to enhance your experience on our website. By continuing to browse, you agree to our use of cookies.</p>
+        <div class="cookie-buttons">
+            <button id="acceptCookies">Accept</button>
+            <button id="declineCookies">Decline</button>
+        </div>
+    </div>
+    
+    <script>
+        // Set current year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+        
+        // Cookie consent management
+        document.addEventListener('DOMContentLoaded', function() {
+            const cookieBanner = document.getElementById('cookieBanner');
+            const acceptCookies = document.getElementById('acceptCookies');
+            const declineCookies = document.getElementById('declineCookies');
+            
+            // Check if cookie consent was already given
+            if (!getCookie('cookieConsent')) {
+                setTimeout(() => {
+                    cookieBanner.classList.add('show');
+                }, 1000);
+            }
+            
+            // Handle accept cookies
+            acceptCookies.addEventListener('click', function() {
+                setCookie('cookieConsent', 'accepted', 365);
+                cookieBanner.classList.remove('show');
+            });
+            
+            // Handle decline cookies
+            declineCookies.addEventListener('click', function() {
+                setCookie('cookieConsent', 'declined', 365);
+                cookieBanner.classList.remove('show');
+                // Here you would typically disable non-essential cookies
+            });
+            
+            // Contact form handling
+            const contactForm = document.getElementById('contactForm');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    alert('Thank you for your message! We will get back to you soon.');
+                    contactForm.reset();
+                });
+            }
+        });
+        
+        // Cookie helper functions
+        function setCookie(name, value, days) {
+            const date = new Date();
+            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+            const expires = "expires=" + date.toUTCString();
+            document.cookie = name + "=" + value + ";" + expires + ";path=/";
+        }
+        
+        function getCookie(name) {
+            const cookieName = name + "=";
+            const decodedCookie = decodeURIComponent(document.cookie);
+            const cookieArray = decodedCookie.split(';');
+            
+            for (let i = 0; i < cookieArray.length; i++) {
+                let cookie = cookieArray[i];
+                while (cookie.charAt(0) === ' ') {
+                    cookie = cookie.substring(1);
+                }
+                if (cookie.indexOf(cookieName) === 0) {
+                    return cookie.substring(cookieName.length, cookie.length);
+                }
+            }
+            return "";
+        }
+    </script>
+</body>
+</html>
