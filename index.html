@@ -262,7 +262,7 @@
                 <p><strong>Hours:</strong> Mon-Sat 8:00 AM - 6:00 PM</p>
             </div>
             
-            <div class="contact-form">
+            <!-- <div class="contact-form">
                 <form id="contactForm">
                     <div class="form-group">
                         <label for="name">Name</label>
@@ -278,7 +278,8 @@
                     </div>
                     <button type="submit">Send Message</button>
                 </form>
-            </div>
+            </div>-->
+          
         </section>
     </main>
     
@@ -302,19 +303,7 @@
     <script>
         // Set current year in footer
         document.getElementById('year').textContent = new Date().getFullYear();
-            
-            // Contact form handling
-            const contactForm = document.getElementById('contactForm');
-            if (contactForm) {
-                contactForm.addEventListener('submit', function(e) {
-                    e.preventDefault();
-                    alert('Thank you for your message! We will get back to you soon.');
-                    contactForm.reset();
-                });
-            }
-        });
-    </script>
-        }
+        
     </script>
 </body>
 </html>
